@@ -1,0 +1,5 @@
+{
+  "name": "PoleZero Plotter & Analyzer",
+  "description": "An interactive tool to design continuous linear systems by placing poles and zeros. Visualizes the Magnitude Frequency Response (Bode Plot) and uses Gemini AI to analyze system stability and filter characteristics.",
+  "requestFramePermissions": []
+}
