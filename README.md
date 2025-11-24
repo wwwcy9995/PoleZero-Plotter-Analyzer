@@ -53,6 +53,61 @@ Follow these steps to run the project locally.
 ### Installation / 安装
 
 1. **Clone the repository / 克隆仓库**
-   ```bash
    git clone https://github.com/yourusername/pole-zero-plotter.git
    cd pole-zero-plotter
+# 🛠️ Setup and Installation / 设置与安装
+## 1. Install Dependencies / 安装依赖
+
+使用 npm 安装项目所需的所有依赖项。
+npm install
+
+## 2\. Configure Environment Variables / 配置环境变量
+
+在项目的根目录下创建一个名为 `.env` 的文件，并添加您的 Gemini API Key。
+
+> **注意：**
+>
+>   * 如果使用 **Vite**，请使用变量名 `VITE_API_KEY`，并更新 `geminiService.ts` 文件以使用 `import.meta.env.VITE_API_KEY`。
+>   * 如果使用标准的 **Webpack/CRA**，请使用 `REACT_APP_API_KEY`。
+
+`.env` 文件内容示例：
+
+```env
+# Example for Vite / Vite 示例
+VITE_API_KEY=your_google_gemini_api_key_here
+```
+
+## 3\. Run the application / 运行应用
+
+执行以下命令启动开发服务器：
+
+npm run dev
+
+## 4\. Open in Browser / 在浏览器打开
+
+应用程序启动后，请访问显示的地址：
+
+  * **访问** `http://localhost:5173`（或终端中显示的实际端口号）。
+
+-----
+
+# 📖 Usage Guide / 使用指南
+
+## 1\. Interactive Mode / 交互模式
+
+该模式用于通过图形化方式实时调整系统。
+
+  * **添加元素：** 使用**侧边栏**来添加**极点 (x)** 或**零点 (o)**。
+  * **选择元素：** 直接点击列表或图表上的元素来选中它们。
+  * **调整位置：** 使用滑块或输入框来调整选中元素的**实部/虚部**位置。
+  * **观察结果：** 观察**波特图** (Bode Plot) 的实时更新。
+
+## 2\. Transfer Function Mode / 传递函数模式
+
+该模式用于通过输入传递函数系数来分析系统。
+
+  * **切换模式：** 切换标签页至 **"System Function"**。
+  * **输入系数：** 输入**分子**和**分母**多项式的系数。系数应按 $s$ 的**降幂**顺序排列。
+      * **示例：** 输入 `1 0 4` 对应的传递函数是 $s^2 + 4$。
+  * **生成图表：** 点击 **"Generate Plots"** 按钮。
+  * **相位图：** **相位图** (Phase Chart) 仅在此模式下可用，用于分析完整的频率响应。
