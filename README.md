@@ -3,6 +3,7 @@
 **PoleZero Plotter** is an interactive web application designed for control systems engineering students and professionals. It allows users to visualize and analyze continuous Linear Time-Invariant (LTI) systems through Pole-Zero maps, Bode plots, and AI-powered system analysis.
 
 **PoleZero Plotter** 是专为控制系统工程学生和专业人士设计的交互式 Web 应用程序。它允许用户通过零极点图、波特图和 AI 辅助分析来可视化和理解连续线性时不变 (LTI) 系统。
+<img width="817" height="674" alt="image" src="https://github.com/user-attachments/assets/19e5bea2-5c06-4ef2-ae49-cb3792734ccf" />
 
 ---
 
