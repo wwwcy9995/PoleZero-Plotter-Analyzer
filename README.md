@@ -55,11 +55,17 @@ Follow these steps to run the project locally.
 1. **Clone the repository / 克隆仓库**
    git clone https://github.com/yourusername/pole-zero-plotter.git
    cd pole-zero-plotter
+
+````markdown
 # 🛠️ Setup and Installation / 设置与安装
+
 ## 1. Install Dependencies / 安装依赖
 
 使用 npm 安装项目所需的所有依赖项。
+
+```bash
 npm install
+````
 
 ## 2\. Configure Environment Variables / 配置环境变量
 
@@ -81,7 +87,9 @@ VITE_API_KEY=your_google_gemini_api_key_here
 
 执行以下命令启动开发服务器：
 
+```bash
 npm run dev
+```
 
 ## 4\. Open in Browser / 在浏览器打开
 
