@@ -55,8 +55,7 @@ Follow these steps to run the project locally.
 1. **Clone the repository / 克隆仓库**
    git clone https://github.com/yourusername/pole-zero-plotter.git
    cd pole-zero-plotter
-
-````markdown
+   
 # 🛠️ Setup and Installation / 设置与安装
 
 ## 1. Install Dependencies / 安装依赖
